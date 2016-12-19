@@ -1,0 +1,301 @@
+/* ---------------Web responsive--------------- */
+*
+{
+    box-sizing: border-box;
+}
+
+.row::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]
+{
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"]
+{
+    width: 100%;
+}
+
+@media only screen and (min-width: 480px)
+{
+    /* For tablets: */
+    .col-m-1
+    {
+        width: 8.33%;
+    }
+
+    .col-m-2
+    {
+        width: 16.66%;
+    }
+
+    .col-m-3
+    {
+        width: 25%;
+    }
+
+    .col-m-4
+    {
+        width: 33.33%;
+    }
+
+    .col-m-5
+    {
+        width: 41.66%;
+    }
+
+    .col-m-6
+    {
+        width: 50%;
+    }
+
+    .col-m-7
+    {
+        width: 58.33%;
+    }
+
+    .col-m-8
+    {
+        width: 66.66%;
+    }
+
+    .col-m-9
+    {
+        width: 75%;
+    }
+
+    .col-m-10
+    {
+        width: 83.33%;
+    }
+
+    .col-m-11
+    {
+        width: 91.66%;
+    }
+
+    .col-m-12
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+    /* For desktop: */
+    .col-1
+    {
+        width: 8.33%;
+    }
+
+    .col-2
+    {
+        width: 16.66%;
+    }
+
+    .col-3
+    {
+        width: 25%;
+    }
+
+    .col-4
+    {
+        width: 33.33%;
+    }
+
+    .col-5
+    {
+        width: 41.66%;
+    }
+
+    .col-6
+    {
+        width: 50%;
+    }
+
+    .col-7
+    {
+        width: 58.33%;
+    }
+
+    .col-8
+    {
+        width: 66.66%;
+    }
+
+    .col-9
+    {
+        width: 75%;
+    }
+
+    .col-10
+    {
+        width: 83.33%;
+    }
+
+    .col-11
+    {
+        width: 91.66%;
+    }
+
+    .col-12
+    {
+        width: 100%;
+    }
+}
+
+/* -------------------------------------------- */
+/* navbar */
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.parent:hover .child
+{
+    opacity: 0.3;
+}
+
+.parent .child:hover
+{
+    opacity: 1;
+}
+
+.child
+{
+    display: inline-block;
+    font-family: Trebuchet MS, Arial, cursive, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #273746;
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    vertical-align: baseline;
+}
+
+/*----bouton----*/
+.btn
+{
+    font-family: Trebuchet MS, Arial, cursive, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    padding-top: 4px;
+    text-align: center;
+    cursor: pointer;
+    color: #273746;
+    background: #808B96;
+    border: 3px solid #ABB2B9;
+    border-radius: 8px;
+    outline: none;
+    transition-duration: 0.3s;
+}
+
+.btn:hover
+{
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24),0 12px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn:active
+{
+    background: #566573;
+    transform: translateY(4px);
+    transition-duration: 0s;
+}
+
+.btn1
+{
+    float:right;
+    margin-top: -3%;
+    margin-right: 1%;
+}
+
+.btn2
+{
+    text-align: center;
+}
+/*----------------*/
+
+/* les éléments sont centrés verticalement */
+.element
+{
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+#figure
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #ED1800;
+    position: relative;
+    background: #ED1800  ; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #ED1800  , #FDFEFE); /* For Safari 5 .1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #ED1800  , #FDFEFE); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #ED1800  , #FDFEFE); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #ED1800  , #FDFEFE); /* Standard syntax */
+    -webkit-animation-name: square-animation; /* version Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* version Safari 4.0 - 8.0 */
+    -moz-animation-name: square-animation;
+    -moz-animation-duration: 4s;
+    -moz-animation-fill-mode: forwards;
+    animation-name: square-animation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+/* Square-animation Move to the right */
+/* Standard syntax */
+@keyframes square-animation {
+    0% {
+        background-color: #ED1800  ;
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        background-color: #ED1800  ;
+        margin-left:43.5%;
+        top: 0px;
+    }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes square-animation{
+    0% {
+        background-color: #ED1800  ;
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        background-color: #ED1800  ;
+        margin-left: 43.5%;
+        top: 0px;
+    }
+}
+
+@keyframes bounce {
+    from {transform: translateY(0);}
+    to   {transform: translateY(-60px);}
+}
+
+@-webkit-keyframes bounce {
+    from {transform: translateY(0);}
+    to   {transform: translateY(-60px);}
+}
+
+
+
+
+
